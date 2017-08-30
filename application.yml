@@ -5,7 +5,7 @@ shiny:
     landing-page: /
     heartbeat-rate: 10000
     heartbeat-timeout: 60000
-    port: 8080
+    port: 81
     authentication: simple
     admin-groups: admin
     # Simple auth configuration
@@ -26,7 +26,7 @@ shiny:
   - name: milkyway
     display-name: MilkyWay Proteomics
     description: An interface to the Galaxy MilkyWay Workflow System
-    docker-cmd: ["R", "-e shiny::runApp('/root/milkyway',port=3838,host='0.0.0.0')"]
+    docker-cmd: ["find root/milkyway/ -type f -print0 | xargs -0 sed -i 's/milkyway-galaxy/127.0.0.1/g' &&","R", "-e shiny::runApp('/root/milkyway',port=3838,host=0.0.0.0)"]
     docker-image: wbarshop/milkyway_shiny:latest
     groups: scientists, collaborators, admin
 
