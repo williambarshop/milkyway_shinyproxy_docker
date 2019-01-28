@@ -1,6 +1,7 @@
 proxy:
   port: 8080
   container-wait-time: 40000
+  template-path: /templates/2col
   authentication: none
   admin-groups: admin
   hide-navbar: true
