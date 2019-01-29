@@ -20,6 +20,7 @@ proxy:
     container-network: milkyway-stack-ci_milkynet
 spring:
   servlet:
+    context-path: /shiny
     multipart:
       max-file-size: 90000MB
       max-request-size: 90000MB
