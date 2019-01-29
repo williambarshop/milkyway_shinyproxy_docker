@@ -1,1 +1,1 @@
-sudo docker build -t wbarshop/milkyway_shinyproxy .
+sudo docker build -t wbarshop/milkyway_shinyproxy:ci .

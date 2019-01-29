@@ -18,9 +18,13 @@ proxy:
     description: An interface to the Galaxy MilkyWay Workflow System
     container-image: wbarshop/milkyway_shiny:dev
     container-network: milkyway-stack-ci_milkynet
-spring:
+
+server:
   servlet:
     context-path: /shiny
+
+spring:
+  servlet:
     multipart:
       max-file-size: 90000MB
       max-request-size: 90000MB
