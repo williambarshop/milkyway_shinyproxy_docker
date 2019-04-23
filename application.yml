@@ -17,7 +17,7 @@ proxy:
     display-name: MilkyWay Proteomics
     description: An interface to the Galaxy MilkyWay Workflow System
     container-image: wbarshop/milkyway_shiny:dev
-    container-network: milkyway-stack-ci_milkynet
+    container-network: milkyway-stack_milkynet
 
 server:
   servlet:
